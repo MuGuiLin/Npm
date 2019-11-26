@@ -1,0 +1,31 @@
+
+注：node_modules 中的模块在被使用时，会自动向上查找的（如：在Koa目录下有多个项目，都要用node_modules中的模块，就直接在Koa目录下安装就可以了，不用每个项目下都安装，因为自动向上查找）
+
+npm init -y	//迅速创建package.json 包管理文件
+
+npm install 模块名	//安装模块 install 可以简写为 i
+
+npm install 模块1 模块2 模块3...	//同时安装多个模块
+
+清除缓存
+npm cache clean –force
+
+
+npm config
+
+npm config list
+
+npm root		//查看 当前项目 node_modules 目录
+
+npm root -g 	//查看 全局node_modules 目录  
+
+//删除全局 node_modules 中的模块 
+	0、打开全局node_modules 目录  【在CMD中输入：npm root -g】获取全局node_modules 目录  
+	1、先删除和 node_modules 同级目录中的模块名文件 如：cnpm
+	2、再删除和 node_modules 同级目录中的模块名.cmd文件 如：cnpm.cmd
+	3、然后在删除 node_modules 里面的模块文件夹 如：cnpm
+
+
+
+// 向npm中发布自己的模块
+//https://www.npmjs.com

@@ -1,0 +1,5 @@
+nvm是一个Node.js版本管理器
+
+nvm下载安装
+
+nvm use 版本号    切换版本

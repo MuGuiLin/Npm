@@ -16,6 +16,7 @@ Npm中文网：https://www.npmjs.cn
 - 注册表：是一个巨大的数据库，保存了每个包（package）的信息。
 - CLI：是通过命令行或终端运行。开发者通过 CLI 与 npm 打交道。
 
+
 ### Npm常用命令
 
 | 命令                          | 注释                    |
@@ -37,6 +38,7 @@ Npm中文网：https://www.npmjs.cn
 | npm uninstall 模块名          | 删除指定的模块               |
 | npm config list              | 显示npm相关信息             |
 
+
 ### Npm参数说明
 
 - install 可以简写为 i； 例如：  npm i jquery
@@ -50,26 +52,48 @@ Npm中文网：https://www.npmjs.cn
 - 在子目录中各自创建的项目，可以共用一个node_modules目录中的模块。
 - 在子目录项目中正常引用模块，模块会自动向上查找node_modules目录中的模块。
 
-## 发布自己的Npm模块  【开发者生，封闭者死！】
+## 发布自己的Npm模块(包)  【开发者生，封闭者死！】
 
 也就是向[_https://npmjs.com_](https://npmjs.com)提交自己的模块！
 
-1. 创建package.json配置文件 ==注：模块名一定是在 Npm仓库中是唯一的才行哦！！==
+1. 创建package.json配置文件**注：模块名一定是在 Npm仓库中是唯一的才行哦！！**
+
 2. 编写要发布的模块
+
 3. 注册npm账号（如查已有账号就略过）注册网址：https://www.npmjs.com/signup
+
 4. npm adduser  //添加并登录用户到  https://registry.npmjs.org
    - Username：输入账号
    - Password：输入密码
    - Emali：输入邮箱
+   
 5. npm publish  //发布npm模块
+
+6. **注：无论是发布模块 还是 删除包 都要保证 npm下载源是官方的下载源才行哦！！**
+   - npm config list   //查看npm下载源
+   
+7. npm config set registry https://registry.npmjs.org   //将下载源设为官方的
+
+8. npm config set registry https://registry.npm.taobao.org  //将下载源设为淘宝的
+
+9. 淘宝NPM镜像：[https://npm.taobao.org](https://npm.taobao.org)
+    - 由于npm 是国外的，网速不好，所以才用国内的淘宝NPM镜像
+    - 这是一个完整 `npmjs.org` 镜像，你可以用此代替官方版本(只读)，同步频率目前为 **10分钟** 一次以保证尽量与官方服务同步。
+
+10. 安装cnpm淘宝NPM镜像：
+    - npm install -g cnpm --registry=https://registry.npm.taobao.org
+    - cnpm 的用法和 npm的用法一样的
+    - cnpm的下载速度比npm的快
+
 
 ## 删除已发布的Npm模块
 
 1. 登录用户到  https://registry.npmjs.org
 2. npm unpublish 模块名 --force    //删除已发布的Npm模块
     - 模块名：就是package.json配置文件中的 "name": 字段
-3. ==删除后24内不能在用这个模块名，再进行发布哦！！==
+3. 注：**删除后24内不能在用这个模块名，再进行发布哦！！**
    
+
 
 ## 在云服务器上配置和使用 Npm
 

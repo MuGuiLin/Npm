@@ -34,6 +34,7 @@ Npm中文网：https://www.npmjs.cn
 | npm update 模块名             | 升级当前目录下的项目的指定模块       |
 | npm install 模块名            | 安装模块（局部安装）            |
 | npm install -g 模块名         | 全局安装模块                |
+|npm cache clean --force        | 清除npm缓存                |
 | npm update -g 模块名          | 升级全局安装的模块             |
 | npm uninstall 模块名          | 删除指定的模块               |
 | npm config list              | 显示npm相关信息             |

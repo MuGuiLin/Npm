@@ -28,9 +28,15 @@ nvm是一个Node.js版本管理器
 
   - NVM常用指令；
 
-    nvm --version查看版本  
+    nvm version //查看版本
 
-    nvm install stable //安装最新稳定版nodejs
+    nvm ls   //查看所有已经安装的Nodejs版本 
+
+    nvm root //查看nvm安装路径 
+
+    nvm arch  //显示节点是否以32位或64位模式运行。
+
+    nvm install stable //安装最新稳定版Nodejs
 
     nvm install 8.11.1  //安装指定版本
 
@@ -47,5 +53,11 @@ nvm是一个Node.js版本管理器
     nvm use node   //切换到最新版本
 
     nvm alias default node //设置默认版本为最新版本
+    
+    nvm on     //启用node.js版本管理
+    
+    nvm off       //禁用node.js版本管理
+    
+    nvm proxy [url]   //设置用于下载的代理。将[url]留空以查看当前代理。 将[url]设置为“无”以删除代理。
 
-    nvm ls   //列出所有已经安装的版本
+    

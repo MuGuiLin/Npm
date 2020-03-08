@@ -47,7 +47,7 @@
 
 - bower install --save angular   	// --save  （将它加入到json文件中
 
-- bower install jquery   			// 安装jquery
+- bower install jquery   			// 安装jquery   安装成功后，会生成一个 bower_components目录，里面就是你所安装的模块啦！
 
 
 

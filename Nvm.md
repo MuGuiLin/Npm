@@ -51,6 +51,8 @@
 | nvm install stable | 安装最新稳定版Nodejs |
 | nvm install 8.11.1 | 安装指定版本 |
 | nvm install 8.11	 | 安装 8.11.x系列最新版本 |
+| nvm uninstall 8.11 | 删除 8.11.x系列最新版本 |
+
 
 
 - 【切换版本】：
@@ -67,6 +69,7 @@
 
 | 命令         		 	| 说明 |
 | --------------------- | ---- |
+| nvm run 10.24 myApp.js| 在v10.24版本下运行 myApp.js |
 | nvm alias default node| 设置默认版本为最新版本 |
 | nvm on     			| 启用node.js版本管理 |
 | nvm off       		| 禁用node.js版本管理 |

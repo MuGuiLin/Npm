@@ -19,26 +19,29 @@ Npm中文网：https://www.npmjs.cn
 
 ### Npm常用命令
 
-| 命令                          | 注释                    |
-| ---------------------------- | ---------------------    |
+| 命令                         | 注释                    			|
+| ---------------------------- | ----------------------------------	|
 | npm -v                       | 显示版本，检查npm 是否正确安装     |
-| npm install -g npm to update | 更新升级npm               |
-| npm init 项目名               | 创建项目 手动填写配置信息         |
-| npm init 项目名 -y            | 创建项目并自动生成配置信息         |
-| npm list                     | 显示当前项目中已安装模块          |
-| npm list -g                  | 显示所以已安装模块             |
-| npm root                     | 显示当前项目 node_modules目录 |
-| npm root -g                  | 显示全局node_modules目录    |
-| npm show 模块名               | 显示当前项目模块详情            |
-| npm update                   | 升级当前目录下的项目的所有模块       |
-| npm update 模块名             | 升级当前目录下的项目的指定模块       |
-| npm install 模块名            | 安装模块（局部安装）            |	
-| npm install -g 模块名         | 全局安装模块                |
-| npm install 模块1 模块2...    | 同时安装多个模块，中间用空格隔开     |
-| npm cache clean --force        | 清除npm缓存                |
-| npm update -g 模块名          | 升级全局安装的模块             |
-| npm uninstall 模块名          | 删除指定的模块               |
-| npm config list              | 显示npm相关信息             |
+| npm -l                       | 显示npm所有操作命令     			|
+| npm -h                       | 显示帮助信息     					|
+| npm init 项目名              | 创建项目 手动填写配置信息         	|
+| npm init 项目名 -y           | 创建项目并自动生成配置信息         |
+| npm list                     | 显示当前项目中已安装模块          	|
+| npm list -g                  | 显示所以已安装模块             	|
+| npm root                     | 显示当前项目 node_modules目录 		|
+| npm root -g                  | 显示全局node_modules目录    		|
+| npm show 模块名              | 显示当前项目模块详情            	|
+| npm config list              | 显示npm相关信息             		|
+| npm install 模块名           | 安装模块（局部安装）            	|	
+| npm install -g 模块名        | 全局安装模块                		|
+| npm install 模块1 模块2...   | 同时安装多个模块，中间用空格隔开	|
+| npm install -g npm to update | 更新升级npm    					|
+| npm update                   | 升级当前目录下的项目的所有模块		|
+| npm update 模块名            | 升级当前目录下的项目的指定模块		|
+| npm update -g 模块名         | 升级全局安装的模块             	|
+| npm uninstall 模块名         | 删除指定的模块               		|
+| npm cache clean --force      | 清除npm缓存                		|
+
 
 
 ### Npm参数说明

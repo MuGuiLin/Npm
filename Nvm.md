@@ -28,6 +28,9 @@
   
 	此时nvm就被安装在了/.nvm下啦!
 
+# 注：在window系统，如果你之前有安装过nodejs,一定要把那个安装目录的名字改为其他名字如：以前是：C:\Program Files\nodejs，将其改为：C:\Program Files\nodejsx 就OK啦！
+
+# 不然在nvm use xxx 后提示切换成功，但是在 node -v 发现还是之前的node版本的问题！
 
 ## NVM常用指令；
 
